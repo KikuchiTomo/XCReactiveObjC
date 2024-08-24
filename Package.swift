@@ -8,9 +8,7 @@ let package = Package(
     .library(
       name: "ReactiveObjC",
       targets: ["ReactiveObjC"])
-  ],
-  dependencies: [    
-  ],
+  ], 
   targets: [
     .binaryTarget(
       name: "ReactiveObjC",
