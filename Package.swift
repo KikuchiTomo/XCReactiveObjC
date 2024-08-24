@@ -2,7 +2,7 @@ import PackageDescription
 
 let package = Package(
   name: "ReactiveObjCBridge",
-  platforms: [.iOS(.v15)],
+  platforms: [.iOS(.v8), .macOS(.v10_9, .tvOS(.v9), .watchOS(.v2)],
   products: [
     .library(
       name: "ReactiveObjCBridge",
@@ -10,8 +10,7 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: "6.4.0"),
-    .package(url: "https://github.com/KikuchiTomo/XCReactiveObjC.git", branch: "ReactiveObjC")
-    
+    .package(url: "https://github.com/KikuchiTomo/XCReactiveObjC.git", branch: "ReactiveObjC")    
   ],
   targets: [
      .binaryTarget(
