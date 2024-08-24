@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
   name: "ReactiveObjC",
-  platforms: [.iOS(.v8), .macOS(.v10_9), .tvOS(.v9), .watchOS(.v2)],
+  platforms: [.iOS(.v15), .macOS(.v10_15)],
   products: [   
     .library(
       name: "ReactiveObjC",
